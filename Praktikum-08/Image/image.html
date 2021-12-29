@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Picker | Cahaya Arzeti</title>
+  </head>
+  <body>
+    <select id="hewan">
+      <option value="gorila">Gorilla</option>
+      <option value="kuda">Horse</option>
+      <option value="kucing">Cat</option>
+      <option value="kelinci">Rabbit</option>
+      <option value="domba">Sheep</option>
+    </select>
+    <button onclick="cetakGambar()">Print</button>
+    <img id="gambar" src="" />
+
+    <script>
+      function cetakGambar() {
+        const hewan = document.getElementById("hewan");
+        const gambar = document.getElementById("gambar");
+
+        if (hewan.value === "gorila") {
+          gambar.src =
+            "https://awsimages.detik.net.id/community/media/visual/2016/05/30/9b70078d-4fad-4325-b37f-d7e27801071c_11.jpg?w=700&q=90";
+        }
+
+        if (hewan.value === "kuda") {
+          gambar.src =
+            "http://www.igha.org/wp-content/uploads/2021/03/Kuda-800x500.jpg";
+        }
+
+        if (hewan.value === "kucing") {
+          gambar.src =
+            "https://cdn-2.tstatic.net/jakarta/foto/bank/images/ilustrasi-kucing_20180618_155243.jpg";
+        }
+
+        if (hewan.value === "kelinci") {
+          gambar.src =
+            "https://cdn-2.tstatic.net/kaltim/foto/bank/images/ilustrasi-kelinci.jpg";
+        }
+
+        if (hewan.value === "domba") {
+          gambar.src =
+            "https://media.suara.com/pictures/653x366/2017/04/26/92724-domba.jpg";
+        }
+      }
+    </script>
+  </body>
+</html>
